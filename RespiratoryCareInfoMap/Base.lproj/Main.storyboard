@@ -16,8 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dRp-3R-tS5">
+                                <rect key="frame" x="20" y="88" width="374" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색 옵션 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doz-cS-CWn">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="at6-mb-ZNT">
+                                        <rect key="frame" x="86.5" y="0.0" width="287.5" height="32"/>
+                                        <segments>
+                                            <segment title="현 위치 중심으로"/>
+                                            <segment title="현 지도 중심으로"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-TJ-Aey">
+                                <rect key="frame" x="0.0" y="127" width="414" height="675"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iif-TJ-Aey" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="127" id="1X3-vg-nYI"/>
+                            <constraint firstItem="dRp-3R-tS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5KR-Lh-0GY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Iif-TJ-Aey" secondAttribute="bottom" constant="60" id="6dK-J4-t5n"/>
+                            <constraint firstItem="Iif-TJ-Aey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RNN-kB-W6U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRp-3R-tS5" secondAttribute="trailing" constant="20" id="TeD-PX-z8n"/>
+                            <constraint firstItem="Iif-TJ-Aey" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eij-JO-rYs"/>
+                            <constraint firstItem="dRp-3R-tS5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mfm-MX-mbB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hGZ-Q1-bRl"/>
                 </viewController>
