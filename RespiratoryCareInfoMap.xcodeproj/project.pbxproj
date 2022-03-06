@@ -361,7 +361,7 @@
 				DEVELOPMENT_TEAM = 6U96B8GM97;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RespiratoryCareInfoMap/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "호흡기 진료 병의원 정보";
+				INFOPLIST_KEY_CFBundleDisplayName = "Co-First";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 권한 필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -395,7 +395,7 @@
 				DEVELOPMENT_TEAM = 6U96B8GM97;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RespiratoryCareInfoMap/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "호흡기 진료 병의원 정보";
+				INFOPLIST_KEY_CFBundleDisplayName = "Co-First";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도 권한 필요";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

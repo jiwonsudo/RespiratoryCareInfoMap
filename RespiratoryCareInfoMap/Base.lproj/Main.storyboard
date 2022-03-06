@@ -9,61 +9,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Co-First-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RespiratoryCareInfoMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dRp-3R-tS5">
-                                <rect key="frame" x="20" y="88" width="374" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색 옵션 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Doz-cS-CWn">
-                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="at6-mb-ZNT">
-                                        <rect key="frame" x="86.5" y="0.0" width="287.5" height="32"/>
-                                        <segments>
-                                            <segment title="현 위치 중심으로"/>
-                                            <segment title="현 지도 중심으로"/>
-                                        </segments>
-                                    </segmentedControl>
-                                </subviews>
-                            </stackView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-TJ-Aey">
-                                <rect key="frame" x="0.0" y="127" width="414" height="675"/>
-                            </mapView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Iif-TJ-Aey" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="127" id="1X3-vg-nYI"/>
-                            <constraint firstItem="dRp-3R-tS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5KR-Lh-0GY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Iif-TJ-Aey" secondAttribute="bottom" constant="60" id="6dK-J4-t5n"/>
-                            <constraint firstItem="Iif-TJ-Aey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RNN-kB-W6U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRp-3R-tS5" secondAttribute="trailing" constant="20" id="TeD-PX-z8n"/>
-                            <constraint firstItem="Iif-TJ-Aey" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eij-JO-rYs"/>
-                            <constraint firstItem="dRp-3R-tS5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mfm-MX-mbB"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hGZ-Q1-bRl"/>
+                    <navigationItem key="navigationItem" title="Co-First" id="hGZ-Q1-bRl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="123.88392857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--HospitalMap-->
         <scene sceneID="TNC-Lq-fm2">
             <objects>
-                <viewController id="Afy-Lk-oXI" sceneMemberID="viewController">
+                <viewController title="HospitalMap" id="Afy-Lk-oXI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0HZ-fB-nuu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCo-jJ-fsR">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="rectangle.and.text.magnifyingglass" catalog="system" id="qRB-tr-it2"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xZS-e0-Dhg"/>
+                                    <barButtonItem title="Item" image="magnifyingglass" catalog="system" id="aN5-YD-FC7"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KR4-H8-ax0"/>
+                                    <barButtonItem title="Item" image="location" catalog="system" id="2ps-rK-aNP"/>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TNB-H2-pxO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gg0-fm-xAS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -107,6 +92,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="location" catalog="system" width="128" height="118"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="rectangle.and.text.magnifyingglass" catalog="system" width="128" height="101"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
